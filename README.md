@@ -31,7 +31,8 @@ cmake .. # Option 2
 
 ```shell
 cd build
-cmake .
+cmake --build . # Option 1
+make # Option 2 (Unix Makefiles)
 ```
 
 ## Generator for GCC and Clang
@@ -44,4 +45,13 @@ cmake ..
 
 ```shell
 cmake .. -G "Xcode"
+```
+
+```shell
+# build all
+cmake --build .
+
+# only build library
+cmake --build . --target Library 
+
 ```

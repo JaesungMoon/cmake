@@ -6,4 +6,11 @@ project(
     LANGUAGES C CXX
 )
 
+# target 1 - library
+add_library(Library STATIC my_lib.cc)
+
+# target 2 - executable
 add_executable(Executable main.cc)
+
+# PUBLIC / PRIVATE / INTERFACE
+target_link_libraries(Executable PUBLIC Library)
