@@ -53,5 +53,16 @@ cmake --build .
 
 # only build library
 cmake --build . --target Library 
-
 ```
+
+Added in version 3.15: Added Swift support.
+Added in version 3.16: Added OBJC and OBJCXX support.
+
+## clean build
+
+clean build. from 3.24 version
+**--fresh**
+
+or old version
+**rm CMakeCache.txt**
+> Perform a fresh configuration of the build tree. This removes any existing CMakeCache.txt file and associated CMakeFiles/ directory, and recreates them from scratch.
