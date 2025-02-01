@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/namkeumwoo/Documents/git/cmake/alternative_project_structure",
+      "program": "/Users/namkeumwoo/Documents/git/cmake/alternative_project_structure/build/Debug/outDebug"
+    }
+  ]
+}

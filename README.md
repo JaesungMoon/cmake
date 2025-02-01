@@ -103,3 +103,12 @@ message(STATUS "HEADER_DIRS: ${HEADER_DIRS}")
 set(CMAKE_CXX_STANDARD 17)
 
 ```
+
+セットしない場合は表示されない
+C++ Standardとか、、、
+
+```shell
+-- The CXX compiler identification is AppleClang 16.0.0.16000026
+-- C++ Compiler Version: 16.0.0.16000026
+-- C++ Standard: 17
+```
