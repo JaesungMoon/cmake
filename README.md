@@ -1,5 +1,14 @@
 # cmake
 
+## CMakeCache.txt
+
+cacheファイルをいじれば早くvariable変更が可能
+cmake .. を再度やる必要がなくなる
+
+CMake Cache Editorがないmacosだからか？
+
+tooklikとかインストールしたけど、playボタンでの実行はできない
+
 ```shell
 cmake --version                                             (git)-[main]
 cmake version 3.30.3
