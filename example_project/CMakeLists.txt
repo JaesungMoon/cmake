@@ -8,15 +8,6 @@ message(STATUS "CMAKE_BUILD_TYPE: ${CMAKE_BUILD_TYPE}")
 set(LIBRARY_NAME Library)
 set(EXECUTABLE_NAME Executable)
 
-# boolean option
-option(COMPILE_EXECUTABLE "Compile the executable" ON)
-
+add_subdirectory(configured)
 add_subdirectory(src)
-if (COMPILE_EXECUTABLE)
-    add_subdirectory(app)
-else()
-    message("W/o executable. compiling")
-endif()
-
-message(STATUS "<<< cmake done")
-
+add_subdirectory(app)
