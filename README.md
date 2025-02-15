@@ -1,5 +1,7 @@
 # cmake
 
+[from](https://github.com/franneck94/UdemyCmake)
+
 ## CMakeCache.txt
 
 cacheファイルをいじれば早くvariable変更が可能
@@ -22,7 +24,8 @@ touch CMakeLists.txt
 ```shell
 mkdir build && cd build
 cmake .. # - Generating the build files / configure the project
-cmake --build .
+cmake --build . # linking
+cmake .. && cmake --build .
 ./Executable
 ```
 
@@ -121,3 +124,19 @@ C++ Standardとか、、、
 -- C++ Compiler Version: 16.0.0.16000026
 -- C++ Standard: 17
 ```
+
+constexpr は c+11 から
+set(CMAKE_CXX_STANDARD          17)
+指定しないとエラー
+Error unknown type name 'constexpr' during make in mac os x
+[stackoverflow](https://stackoverflow.com/questions/45047508/error-unknown-type-name-constexpr-during-make-in-mac-os-x)
+
+CMAKE_CURRENT_BINARY_DIR はそのcmakeの場所
+CMAKE_BINARY_DIR はビルドしている場所
+
+```git
+-    "${CMAKE_CURRENT_BINARY_DIR}/configured_files/include/config.hpp" ESCAPE_QUOTES
++    "${CMAKE_BINARY_DIR}/configured_files/include/config.hpp" ESCAPE_QUOTES
+```
+
+EOF
